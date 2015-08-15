@@ -11,8 +11,8 @@
         A simple employee directory application
     </description>
  
-    <author href="http://coenraets.org" email="ccoenraets@gmail.com">
-        Christophe Coenraets
+    <author href="http://coenraets.org" email="dev@huntingpa.info">
+        Steven Orvis
     </author>
  
     <feature name="http://api.phonegap.com/1.0/camera"/>
@@ -22,5 +22,5 @@
     <feature name="http://api.phonegap.com/1.0/media"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
     <feature name="http://api.phonegap.com/1.0/notification"/>
- 
 </widget>
+ 
