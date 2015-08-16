@@ -30,7 +30,7 @@ var app = {
 	},
 	
 	slidePage: function(page) {
-		navigator.notification.vibrate(500);
+		//navigator.notification.vibrate(500);
 	 
 		var currentPageDest,
 			self = this;
