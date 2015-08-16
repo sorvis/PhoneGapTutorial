@@ -17,6 +17,7 @@ var app = {
 			} else {
 				this.homePage = new HomeView(this.store).render();
 				this.slidePage(this.homePage);
+				this.homePage.findByName();
 			}
 			return;
 		}
