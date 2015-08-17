@@ -31,6 +31,10 @@ var app = {
 	
 	slidePage: function(page) {
 		//navigator.notification.vibrate(500);
+		if(!typeof navigator.notification === 'undefined')
+		{
+			navigator.notification.vibrate( 1000 );
+		}
 	 
 		var currentPageDest,
 			self = this;
