@@ -105,15 +105,9 @@ var app = {
 		this.detailsURL = /^#employees\/(\d{1,})/;
 		this.store = new MemoryStore(function() {
 			self.route();
-		},
+		})},
 		
-		// Bind Event Listeners
-		//
-		// Bind any events that are required on startup. Common events are:
-		// 'load', 'deviceready', 'offline', and 'online'.
-		bindEvents: function() {
-			document.addEventListener('deviceready', this.onDeviceReady, false);
-		},
+		
 		// deviceready Event Handler
 		//
 		// The scope of 'this' is the event. In order to call the 'receivedEvent'
@@ -136,10 +130,6 @@ var app = {
 		vibrate: function() {
 		  navigator.notification.vibrate( 1000 );
 		}
-		
-		);
-	}
-
 };
 
 app.initialize();
