@@ -96,6 +96,10 @@ var app = {
 		
 		$(window).on('hashchange', $.proxy(this.route, this));
 	},
+	
+    vibrate: function() {
+      navigator.notification.vibrate( 1000 );
+    },	
 
 	initialize: function() {
 		var self = this;
@@ -104,6 +108,7 @@ var app = {
 		this.store = new MemoryStore(function() {
 			self.route();
 		});
+		vibrate();
 	}
 
 };
